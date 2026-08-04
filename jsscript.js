@@ -1,75 +1,82 @@
+// 1. Sample product data for your store
 const products = [
   {
-    name: 'Wireless Headphones',
-    price: '$89',
-    description: 'Noise cancelling with 30-hour battery.'
+    id: 1,
+    name: "Wireless Headphones",
+    price: "$89.99",
+    description: "Noise cancelling with 30-hour battery.",
+    image: "https://dummyimage.com/400x240/1e3a8a/ffffff.png&text=Headphones"
   },
   {
-    name: 'Smart Watch',
-    price: '$129',
-    description: 'Health tracking and AMOLED display.'
+    id: 2,
+    name: "Smart Watch",
+    price: "$129.99",
+    description: "Health tracking with AMOLED display.",
+    image: "https://dummyimage.com/400x240/0f4e4e/ffffff.png&text=Smart+Watch"
   },
   {
-    name: 'Laptop Stand',
-    price: '$49',
-    description: 'Adjustable aluminum stand for better posture.'
+    id: 3,
+    name: "Bluetooth Speaker",
+    price: "$45.00",
+    description: "Powerful sound in a compact design.",
+    image: "https://dummyimage.com/400x240/2563eb/ffffff.png&text=Speaker"
   },
   {
-    name: 'Phone Charger',
-    price: '$24',
-    description: 'Fast charging with USB-C compatibility.'
+    id: 4,
+    name: "Gaming Mouse",
+    price: "$29.99",
+    description: "High-precision sensor with RGB lighting.",
+    image: "https://dummyimage.com/400x240/083d77/ffffff.png&text=Gaming+Mouse"
+  },
+  {
+    id: 5,
+    name: "Mechanical Keyboard",
+    price: "$79.99",
+    description: "Tactile keys with customizable backlight.",
+    image: "https://dummyimage.com/400x240/0f172a/ffffff.png&text=Keyboard"
   }
 ];
 
-function createProductImage(label) {
-  const svg = `
-    <svg xmlns="http://www.w3.org/2000/svg" width="400" height="240" viewBox="0 0 400 240">
-      <rect width="400" height="240" rx="24" fill="#dbeafe"/>
-      <rect x="60" y="40" width="280" height="160" rx="16" fill="#ffffff"/>
-      <text x="200" y="115" text-anchor="middle" font-size="28" fill="#1e3a8a" font-family="Segoe UI, Arial, sans-serif">${label}</text>
-    </svg>`;
-  return `data:image/svg+xml;charset=UTF-8,${encodeURIComponent(svg)}`;
-}
+// 2. DOM Elements
+const productGrid = document.querySelector(".product-grid");
+const searchInput = document.querySelector("input[type='text']");
 
-function renderProducts(items) {
-  const container = document.querySelector('.product-grid');
-  if (!container) return;
+// 3. Function to render product cards on the screen
+function displayProducts(items) {
+  productGrid.innerHTML = "";
 
-  container.innerHTML = '';
-
-  if (!items.length) {
-    container.innerHTML = '<p class="empty-state">No products found.</p>';
+  if (items.length === 0) {
+    productGrid.innerHTML = "<p class='empty-state'>No products found.</p>";
     return;
   }
 
-  items.forEach((product) => {
-    const card = document.createElement('article');
-    card.className = 'product-card';
+  items.forEach(product => {
+    const card = document.createElement("div");
+    card.classList.add("product-card");
+
     card.innerHTML = `
-      <img src="${createProductImage(product.name)}" alt="${product.name}">
+      <img src="${product.image}" alt="${product.name}">
       <h3>${product.name}</h3>
-      <p>${product.description}</p>
-      <strong>${product.price}</strong>
-      <button type="button">Add to cart</button>
+      <p class="product-description">${product.description}</p>
+      <p class="price">${product.price}</p>
+      <button type="button">Add to Cart</button>
     `;
-    container.appendChild(card);
+
+    productGrid.appendChild(card);
   });
 }
 
-function filterProducts(query) {
-  const term = query.trim().toLowerCase();
-  if (!term) return products;
-  return products.filter((product) =>
-    product.name.toLowerCase().includes(term) ||
-    product.description.toLowerCase().includes(term)
+// 4. Live search filter event listener
+searchInput.addEventListener("input", (e) => {
+  const searchTerm = e.target.value.toLowerCase().trim();
+
+  const filteredProducts = products.filter(product =>
+    product.name.toLowerCase().includes(searchTerm) ||
+    product.description.toLowerCase().includes(searchTerm)
   );
-}
 
-const searchInput = document.querySelector('.search-input');
-if (searchInput) {
-  searchInput.addEventListener('input', (event) => {
-    renderProducts(filterProducts(event.target.value));
-  });
-}
+  displayProducts(filteredProducts);
+});
 
-renderProducts(products);
+// 5. Initial display on page load
+displayProducts(products);
