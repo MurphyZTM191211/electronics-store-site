@@ -93,6 +93,13 @@ h1 {
   padding: 10px;
 }
 
+/* Highlight Recommended Section with a subtle border/background */
+#recommended-grid {
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 16px;
+  padding: 20px;
+}
+
 /* Product Cards */
 .product-card {
   background-color: #ffffff;
@@ -105,11 +112,6 @@ h1 {
   flex-direction: column;
   justify-content: space-between;
   gap: 10px;
-}
-
-.product-card h3 {
-  color: #111827;
-  font-size: 1.1rem;
 }
 
 .product-card p {
@@ -126,21 +128,45 @@ h1 {
   border-radius: 12px;
 }
 
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
 .product-card img {
-  border-radius: 6px;
-  margin-bottom: 10px;
+  border-radius: 12px;
   width: 100%;
-  height: auto;
+  height: 180px;
+  object-fit: cover;
+  margin-bottom: 14px;
+}
+
+.product-card h3 {
+  color: #0f172a;
+  margin: 0 0 8px;
+  font-size: 1.15rem;
+}
+
+.product-description {
+  color: #475569;
+  font-size: 0.95rem;
+  margin: 0 0 12px;
+}
+
+.price {
+  color: #059669;
+  font-weight: bold;
+  margin: 0 0 16px;
 }
 
 .product-card button {
   background-color: #1e3a8a;
   color: #ffffff;
   border: none;
-  padding: 10px 16px;
+  padding: 12px 16px;
   font-size: 14px;
   font-weight: bold;
-  border-radius: 6px;
+  border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.2s ease;
 }
@@ -148,6 +174,7 @@ h1 {
 .product-card button:hover {
   background-color: #2563eb;
 }
+
 
 @media (max-width: 768px) {
   body {
