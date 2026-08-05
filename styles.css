@@ -37,10 +37,18 @@ textarea {
   margin-bottom: 20px;
 }
 
-p {
-  align-items: right;
-  color: darkblue;
+.student-notice {
+  width: fit-content;            /* Fits the box snugly around the text */
+  margin-left: auto;             /* Pushes the box all the way to the right */
+  margin-right: 0;
   
+  border: 1px solid #333;       /* Creates a clear outline/box */
+  padding: 8px 14px;             /* Adds space inside the box */
+  border-radius: 6px;            /* Gives the box slightly rounded corners */
+  
+  font-size: 0.9rem;
+  color: #555;
+  background-color: #f9f9f9;     /* Soft background to make the box clear */
 }
 h1 {
   color: #1e3a8a;
