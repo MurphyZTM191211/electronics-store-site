@@ -37,6 +37,11 @@ textarea {
   margin-bottom: 20px;
 }
 
+p {
+  align-items: right;
+  color: darkblue;
+  
+}
 h1 {
   color: #1e3a8a;
   font-size: 2.5rem;
