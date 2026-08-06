@@ -37,7 +37,7 @@ const products = [
   {
     id: 6,
     name: "Smart TV",
-    prize: "$7999.99",
+    price: "$7999.99",
     image: "https://th.bing.com/th/id/OIP.kUH80e8ldsGrPXfmHFQuXQHaEK?w=318&h=180&c=7&r=0&o=7&pid=1.7&rm=3"
   },
 ];
