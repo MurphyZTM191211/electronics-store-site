@@ -5,7 +5,7 @@ const products = [
     name: "Wireless Headphones",
     price: "$89.99",
     description: "Noise cancelling with 30-hour battery.",
-    image: "https://th.bing.com/th/id/OIP.usEs-wW1srCi-k3Rk6sXXgHaKA?w=157&h=212&c=7&r=0&o=7&pid=1.7&rm=3"
+    image: "https://th.bing.com/th/id/OIP.rAMTGHyyjcQYqHvxFXmeqQHaHa?w=219&h=219&c=7&r=0&o=7&pid=1.7&rm=3"
   },
   {
     id: 2,
