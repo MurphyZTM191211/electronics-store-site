@@ -46,6 +46,7 @@ const products = [
   {
     id:8,
     name: "gaming monitor",
+    price: "$8999.99",
     image: "https://www.google.com/search?q=gaming+monitor&client=ms-android-xiaomi-terr1-rso2&hs=NlOq&sca_esv=c5ee5770343b8bd7&udm=2&biw=384&bih=683&sxsrf=APpeQntgzGrmhY-bmOQbSUaAr5pzmcDuMg%3A1786060104653&ei=SB11atjCJ7SZseMPudTTgAE&oq=gam&gs_lp=EhJtb2JpbGUtZ3dzLXdpei1pbWciA2dhbSoCCAAyChAAGIAEGIoFGEMyChAAGIAEGIoFGEMyChAAGIAEGIoFGEMyChAAGIAEGIoFGEMyChAAGIAEGIoFGENIwBtQzQdYyxdwAXgAkAEAmAF1oAGKB6oBAzguMrgBAcgBAPgBAZgCC6AC0weoAgXCAgcQIxjJAhgnwgIGEAAYBxgewgIKECMYyQIY6gIYJ8ICExAuGIAEGIoFGEMYsQMYxwEY0QOYAwaIBgGSBwM4LjOgB5ofsgcDNy4zuAfMB8IHBTItOC4zyAdFgAgB&sclient=mobile-gws-wiz-img#sv=CAMSVxoyKhBlLWpfMHNjaDFyMVJwcV9NMg5qXzBzY2gxcjFScHFfTToOR01XdGM2bC16LUxTS00gBCoXCgFzEhBlLWpfMHNjaDFyMVJwcV9NGAEwAUoECAEQAhgHIPPN0tgFSggQAhgBIAIoAQ"
   },
 ];
