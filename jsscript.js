@@ -5,7 +5,7 @@ const products = [
     price: "$89.99",
     description: "Noise cancelling with 30-hour battery.",
     // Replaced duplicate base64 string with a headphone image URL
-    image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=300" 
+    image: "https://th.bing.com/th/id/OIP.44ciNE8XxJXm84XpFy4NggHaLd?w=128&h=199&c=7&r=0&o=7&pid=1.7&rm=3" 
   },
   {
     id: 2,
