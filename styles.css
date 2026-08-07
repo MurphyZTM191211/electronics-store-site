@@ -22,6 +22,8 @@ body {
   -ms-user-select: text;
   user-select: text;
   -webkit-touch-callout: default;
+  transition: background-color 0.4s ease, color 0.4s ease; 
+}
 }
 
 button,
@@ -103,7 +105,10 @@ body.dark-mode .product-card .product-description {
 body.dark-mode .product-card .price {
   color: #34d371 !important; 
 }
-
+/* Smooth fade for all text and UI elements when toggling themes */
+h1, h2, h3, h4, p, span, a, strong, b, .price, .disclaimer-box, #recommended-grid {
+  transition: color 0.4s ease, background-color 0.4s ease, border-color 0.4s ease;
+}
 /* Update .hero to act as the positioning anchor */
 .hero {
   text-align: center;
@@ -198,11 +203,13 @@ h1 {
   padding: 20px;
   text-align: center;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 10px;
+
+  /* UPDATE THIS LINE TO INCLUDE BACKGROUND-COLOR */
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.4s ease;
 }
 
 .product-card p {
