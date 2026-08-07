@@ -51,6 +51,7 @@ textarea {
 body.dark-mode {
   background-color: #0f172a;
   color: #f8fafc;
+  transition: 0.5s;
 }
 
 /* Update cards and sections in dark mode */
