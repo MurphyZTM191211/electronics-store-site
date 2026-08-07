@@ -30,6 +30,53 @@ select,
 textarea {
   font: inherit;
 }
+/* Styling for the Theme Toggle Button */
+.theme-toggle-btn {
+  background-color: #1e3a8a;
+  color: #ffffff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 0.85rem;
+  transition: all 0.3s ease;
+}
+
+.theme-toggle-btn:hover {
+  background-color: #2563eb;
+}
+
+/* Dark Mode Overrides */
+body.dark-mode {
+  background-color: #0f172a;
+  color: #f8fafc;
+}
+
+/* Update cards and sections in dark mode */
+body.dark-mode .product-card {
+  background-color: #1e293b;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+body.dark-mode .product-card h3,
+body.dark-mode h1 {
+  color: #f1f5f9;
+}
+
+body.dark-mode .product-card p,
+body.dark-mode .product-description {
+  color: #cbd5e1;
+}
+
+body.dark-mode #recommended-grid {
+  background-color: rgba(30, 41, 59, 0.5);
+}
+
+body.dark-mode .disclaimer-box {
+  color: #93c5fd;
+  border-color: #93c5fd;
+}
 
 /* Update .hero to act as the positioning anchor */
 .hero {
