@@ -47,6 +47,7 @@ textarea {
   border-radius: 6px;
   font-weight: bold;
   width: 10%;
+  align: right;
 }
 h1 {
   color: #1e3a8a;
