@@ -51,6 +51,7 @@ textarea {
   color: #555;
   background-color: transparent;  /* Soft background to make the box clear */
   word-wrap: on;
+  width: 10%;
 }
 h1 {
   color: #1e3a8a;
