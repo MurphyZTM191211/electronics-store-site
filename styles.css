@@ -82,19 +82,25 @@ body.dark-mode .disclaimer-box {
   border-color: #93c5fd;
 }
 
-/* Force Product Names to turn white in Dark Mode */
+body.dark-mode .product-card h1,
 body.dark-mode .product-card h2,
 body.dark-mode .product-card h3,
 body.dark-mode .product-card h4,
-body.dark-mode .product-card h3 a { /* Added 'a' in case your titles are links */
+body.dark-mode .product-card a,
+body.dark-mode .product-card strong,
+body.dark-mode .product-card b {
   color: #ffffff !important;
 }
 
-/* Ensure paragraph text (descriptions) stays light gray */
+/* 2. Make sure the descriptions stay a readable light gray */
 body.dark-mode .product-card p,
-body.dark-mode .product-card span {
+body.dark-mode .product-card .product-description {
   color: #cbd5e1 !important;
 }
+
+/* 3. (Bonus) Make the green price slightly brighter so it's easier to read in dark mode */
+body.dark-mode .product-card .price {
+  color: #34d399 !important; 
 }
 
 /* Update .hero to act as the positioning anchor */
