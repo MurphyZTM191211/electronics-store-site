@@ -100,7 +100,7 @@ body.dark-mode .product-card .product-description {
 
 /* 3. (Bonus) Make the green price slightly brighter so it's easier to read in dark mode */
 body.dark-mode .product-card .price {
-  color: #34d399 !important; 
+  color: #34d371 !important; 
 }
 
 /* Update .hero to act as the positioning anchor */
