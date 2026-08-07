@@ -77,6 +77,18 @@ body.dark-mode .disclaimer-box {
   color: #93c5fd;
   border-color: #93c5fd;
 }
+/* Make sure all possible headings in the product card turn white in dark mode */
+body.dark-mode .product-card h2,
+body.dark-mode .product-card h3,
+body.dark-mode .product-card h4 {
+  color: #ffffff;
+}
+
+/* Make sure paragraph text (like descriptions) turns light gray */
+body.dark-mode .product-card p,
+body.dark-mode .product-card span {
+  color: #cbd5e1;
+}
 
 /* Update .hero to act as the positioning anchor */
 .hero {
