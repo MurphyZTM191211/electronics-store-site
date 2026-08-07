@@ -47,10 +47,10 @@ textarea {
   max-width: 220px;
   width: auto;                  /* Fixed: removes width: 10% */
   font-size: 0.8rem;
-  color: #1e3a8a;
+  color: black;
   background-color: transparent; /* Fixed: spelling error */
   padding: 8px 12px;
-  border: 2px solid #1e293b;
+  border: 2px solid black;
   border-radius: 6px;
   font-weight: bold;
   text-align: left;
