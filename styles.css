@@ -40,11 +40,13 @@ textarea {
 .disclaimer-box {
   max-width: 250px;              /* Keeps the box neat and readable */
   font-size: 0.8rem;
-  color: #444;
-  background-color: rgba(255, 255, 255, 0.6); /* Optional subtle box styling */
+  color: darkblue;
+  background-color: transpraent; /* Optional subtle box styling */
   padding: 8px 12px;
-  border: 1px solid #ccc;
+  border: 2px solid black;
   border-radius: 6px;
+  font-weight: bold;
+  width: 10%;
 }
 h1 {
   color: #1e3a8a;
