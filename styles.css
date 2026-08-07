@@ -68,8 +68,9 @@ body.dark-mode .product-card p,
 body.dark-mode .product-description {
   color: #fff;
 }
+/* Update the Hero paragraph color in Dark Mode */
 body.dark-mode .hero p {
-  color:#F0B1B1;
+  color: #F0B1B1 !important; 
 }
 
 body.dark-mode #recommended-grid {
@@ -80,17 +81,20 @@ body.dark-mode .disclaimer-box {
   color: #93c5fd;
   border-color: #93c5fd;
 }
-/* Make sure all possible headings in the product card turn white in dark mode */
+
+/* Force Product Names to turn white in Dark Mode */
 body.dark-mode .product-card h2,
 body.dark-mode .product-card h3,
-body.dark-mode .product-card h4 {
-  color: #ffffff;
+body.dark-mode .product-card h4,
+body.dark-mode .product-card h3 a { /* Added 'a' in case your titles are links */
+  color: #ffffff !important;
 }
 
-/* Make sure paragraph text (like descriptions) turns light gray */
+/* Ensure paragraph text (descriptions) stays light gray */
 body.dark-mode .product-card p,
 body.dark-mode .product-card span {
-  color: #cbd5e1;
+  color: #cbd5e1 !important;
+}
 }
 
 /* Update .hero to act as the positioning anchor */
