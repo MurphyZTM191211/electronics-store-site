@@ -37,21 +37,14 @@ textarea {
   margin-bottom: 20px;
 }
 
-.student-notice {
-  width: fit-content;            /* Fits the box snugly around the text */
-  margin-left: auto;             /* Pushes the box all the way to the right */
-  margin-right: 0;
-  
-  border: 3px solid #333;       /* Creates a clear outline/box */
-  padding: 8px 14px;             /* Adds space inside the box */
-  border-radius: 6px;            /* Gives the box slightly rounded corners */
-  
-  font-size: 14;
-  font-weight: bold;
-  color: #555;
-  background-color: transparent;  /* Soft background to make the box clear */
-  word-wrap: on;
-  width: 10%;
+.disclaimer-box {
+  max-width: 250px;              /* Keeps the box neat and readable */
+  font-size: 0.8rem;
+  color: #444;
+  background-color: rgba(255, 255, 255, 0.6); /* Optional subtle box styling */
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
 }
 h1 {
   color: #1e3a8a;
