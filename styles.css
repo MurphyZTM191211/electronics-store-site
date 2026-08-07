@@ -68,6 +68,9 @@ body.dark-mode .product-card p,
 body.dark-mode .product-description {
   color: #fff;
 }
+body.dark-mode .hero p {
+  color:#F0B1B1;
+}
 
 body.dark-mode #recommended-grid {
   background-color: rgba(30, 41, 59, 0.5);
