@@ -50,6 +50,7 @@ textarea {
   font-weight: bold;
   color: #555;
   background-color: transparent;  /* Soft background to make the box clear */
+  word-wrap: on;
 }
 h1 {
   color: #1e3a8a;
