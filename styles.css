@@ -109,6 +109,9 @@ body.dark-mode .product-card .price b {
   color: #34d399 !important; 
 }
 
+body.dark-mode .price {
+  color: #34d399 !important; 
+}
 /* Smooth fade for all text and UI elements when toggling themes */
 h1, h2, h3, h4, p, span, a, strong, b, .price, .disclaimer-box, #recommended-grid {
   transition: color 0.4s ease, background-color 0.4s ease, border-color 0.4s ease;
