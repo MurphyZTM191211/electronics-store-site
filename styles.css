@@ -31,23 +31,29 @@ textarea {
   font: inherit;
 }
 
-/* Header & Subtitle */
+/* Update .hero to act as the positioning anchor */
 .hero {
   text-align: center;
   margin-bottom: 20px;
+  position: relative; /* Essential for relative positioning */
+  padding-top: 10px;
 }
 
+/* Updated .disclaimer-box */
 .disclaimer-box {
-  max-width: 250px;              /* Keeps the box neat and readable */
+  position: absolute;
+  top: 0;
+  right: 0;
+  max-width: 220px;
+  width: auto;                  /* Fixed: removes width: 10% */
   font-size: 0.8rem;
-  color: darkblue;
-  background-color: transpraent; /* Optional subtle box styling */
+  color: #1e3a8a;
+  background-color: transparent; /* Fixed: spelling error */
   padding: 8px 12px;
-  border: 2px solid black;
+  border: 2px solid #1e293b;
   border-radius: 6px;
   font-weight: bold;
-  width: 10%;
-  align-items: right;
+  text-align: left;
 }
 h1 {
   color: #1e3a8a;
