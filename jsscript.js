@@ -107,3 +107,16 @@ searchInput.addEventListener("input", (e) => {
 
 // 5. Initial display on page load
 displayProducts(products);
+const toggleButton = document.getElementById('theme-toggle');
+
+toggleButton.addEventListener('click', () => {
+  // Toggle the dark-mode class on the body
+  document.body.classList.toggle('dark-mode');
+
+  // Change the button text based on current mode
+  if (document.body.classList.contains('dark-mode')) {
+    toggleButton.textContent = '☀️ Light Mode';
+  } else {
+    toggleButton.textContent = '🌙 Dark Mode';
+  }
+});
