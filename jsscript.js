@@ -47,7 +47,7 @@ const products = [
     id: 8,
     name: "gaming monitor",
     price: "$8999.99",
-    image: "https://www.bing.com/images/search?view=detailV2&ccid=7kRuLhbN&id=EDC55C25C1BE802F8666AEB0B8708CF74B7F90AE&thid=OIP.7kRuLhbNvM86kzdSd7Wf_QHaEt&mediaurl=https%3a%2f%2fm.media-amazon.com%2fimages%2fI%2f91VNV8Gp8DL._AC_.jpg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.ee446e2e16cdbccf3a93375277b59ffd%3frik%3drpB%252fS%252feMcLiwrg%26pid%3dImgRaw%26r%3d0&exph=1429&expw=2244&q=gaming+monitor&FORM=IRPRST&ck=8A78AF27A6D6971E368E6A84FFD5BF1B&selectedIndex=28&itb=0"
+    image: "https://www.bing.com/images/search?view=detailV2&ccid=XL68FVcM&id=230E8BFCE1099A9EC25E05D5A36CFAEA894A06A1&thid=OIP.XL68FVcM11kOIq1RU3Cn3AHaHY&mediaurl=https%3a%2f%2fpisces.bbystatic.com%2fimage2%2fBestBuy_US%2fimages%2fproducts%2faf7022ae-dffd-48c3-8bcb-9e2e016454ae.png&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.5cbebc15570cd7590e22ad515370a7dc%3frik%3doQZKier6bKPVBQ%26pid%3dImgRaw%26r%3d0&exph=3157&expw=3168&q=gaming+monitor&FORM=IRPRST&ck=F0ECDA50DB4324E975CD8D85696C7C6B&selectedIndex=0&itb=0"
   },
 ];
 
