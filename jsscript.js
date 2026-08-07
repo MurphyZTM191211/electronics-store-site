@@ -55,6 +55,12 @@ const products = [
     price: "$199.99",
     image: "https://th.bing.com/th/id/OIP.uSahOc3jisd9yOmQwICt5AAAAA?w=206&h=206&c=7&r=0&o=7&pid=1.7&rm=3"
   },
+  {
+    id: 10,
+    name: "Mic",
+    price: "$19.99",
+    image: "https://th.bing.com/th/id/OIP.eB0swPnHmsD-slSWe2uHjQHaMQ?w=115&h=180&c=7&r=0&o=7&pid=1.7&rm=3"
+  },
 ];
 
 // 2. DOM Elements
