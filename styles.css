@@ -30,6 +30,20 @@ html {
   scroll-behavior: smooth;
 }
 
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 360ms;
+  animation-timing-function: ease-in-out;
+}
+
+::view-transition-old(root) {
+  animation-name: theme-fade-out;
+}
+
+::view-transition-new(root) {
+  animation-name: theme-fade-in;
+}
+
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background: var(--page-bg);
@@ -37,6 +51,30 @@ body {
   line-height: 1.6;
   min-height: 100vh;
   transition: background 0.45s ease, color 0.45s ease;
+}
+
+body,
+.brand-mark,
+.disclaimer-box,
+.main-nav,
+.pill-button,
+.cart-pill,
+.hero,
+.hero-stats div,
+.secondary-btn,
+.search-input,
+.filter-chip,
+.products-section,
+.product-card,
+.badge-tag,
+.cart-dialog,
+.cart-item,
+.quantity-controls button {
+  transition:
+    background-color 360ms ease,
+    color 360ms ease,
+    border-color 360ms ease,
+    box-shadow 360ms ease;
 }
 
 body::before {
@@ -199,23 +237,26 @@ img {
 }
 
 .disclaimer-box {
-  max-width: 410px;
-  margin-left: auto;
-  margin-bottom: 20px;
-  padding: 14px 16px;
-  border-radius: 16px;
+  max-width: 470px;
+  margin: 0 0 20px auto;
+  padding: 0.75rem 1rem;
+  border-radius: 12px;
   background: rgba(255, 255, 255, 0.4);
-  border: 1px solid rgba(148, 163, 184, 0.25);
-  box-shadow: 0 12px 22px rgba(15, 23, 42, 0.05);
-  color: var(--heading);
-  font-size: 0.8rem;
+  border: 1px solid rgba(148, 163, 184, 0.22);
+  color: var(--muted);
+  font-size: 0.82rem;
   line-height: 1.5;
-  transform: translateY(0);
-  animation: floatCard 4s ease-in-out infinite;
+}
+
+.disclaimer-title {
+  margin-bottom: 0.1rem;
+  color: var(--heading);
+  font-size: 0.84rem;
+  font-weight: 700;
 }
 
 .disclaimer-box p + p {
-  margin-top: 6px;
+  margin-top: 0.1rem;
 }
 
 .content-area {
@@ -857,6 +898,11 @@ background: rgba(15, 23, 42, 0.7);
 border-color: rgba(148, 163, 184, 0.18);
 }
 
+body.dark-mode .disclaimer-box {
+background: rgba(15, 23, 42, 0.45);
+border-color: rgba(148, 163, 184, 0.18);
+}
+
 body.dark-mode .search-input,
 body.dark-mode .pill-button,
 body.dark-mode .secondary-btn,
@@ -888,6 +934,48 @@ body.dark-mode .empty-state {
   }
   50% {
     transform: translateY(-4px);
+  }
+}
+
+@keyframes theme-fade-out {
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes theme-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-old(root),
+  ::view-transition-new(root) {
+    animation-duration: 1ms;
+  }
+
+  body,
+  .brand-mark,
+  .disclaimer-box,
+  .main-nav,
+  .pill-button,
+  .cart-pill,
+  .hero,
+  .hero-stats div,
+  .secondary-btn,
+  .search-input,
+  .filter-chip,
+  .products-section,
+  .product-card,
+  .badge-tag,
+  .cart-dialog,
+  .cart-item,
+  .quantity-controls button {
+    transition-duration: 1ms;
   }
 }
 
